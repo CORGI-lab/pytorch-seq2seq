@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# arguments: file, n
+
+if [ $# -ne 2 ]; then 
+	echo Must have 2 arguments: file, n
+else
+	~/miniconda2/bin/python main.py -tr $1 -la 1 -hi 512 -lr 0.0001 -it $2 -b 64 -p 500 -s 500
+fi
